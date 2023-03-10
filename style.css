@@ -191,7 +191,7 @@ nav img{
     margin: auto;
     padding-top: -100px;
     padding-bottom: 60px;
-    margin-top: -150px;
+    margin-top: -200px;
 }
 .val{
     flex-basis: 48%;
@@ -214,3 +214,22 @@ nav img{
 .val h5{
     padding: 15px 0 25px;
 }
+
+.vbtn {
+    background-color: #000000;
+    color: #ff0000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #000000;
+    transition: all 0.3s ease;
+    margin-left: 50px;
+  }
+  
+  .vbtn:hover {
+    background-color: #fff;
+    color: #ff0000;
+  }
