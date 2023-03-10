@@ -7,11 +7,10 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: 
-    linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("images/background.png");
+    background-image: url("images/background.png");
     background-position: center;
     background-size: cover;
-    position: relative;
+    
 }
 
 nav{
@@ -40,7 +39,7 @@ nav img{
 }
 
 .nav-links ul li a{
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     font-size: 16px;
 }
@@ -49,7 +48,7 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background:#6532ef ;
+    background:#ffffff ;
     display: block;
     margin: auto;
     transition: 0.25s;
@@ -60,12 +59,12 @@ nav img{
 }
 
 .nav-links ul li:hover a{
-    color: #6532ef;
+    color: #ffffff;
 }
 
 .text-box{
     width: 90% ;
-    color: #fff;
+    color: #000000;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -76,8 +75,8 @@ nav img{
 .my-btn{
     display: inline-block;
     text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
+    color: #000000;
+    border: 1px solid #000000;
     font-size: 16px;
     padding: 12px 34px;
     background: transparent;
@@ -87,7 +86,131 @@ nav img{
 }
 
 .my-btn:hover{
-    border: 1px solid #fff;
-    background: #6532ef;
+    border: 1px solid #000000;
+    background: #ffffff;
     transition: 1s;
+}
+
+/* New section for the about us section*/
+.sub-header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 149, 224, 0.7),rgba(218, 214, 214, 0.653)), url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #000000;
+
+}
+.sub-header h1{
+    margin-top: 150px;
+}
+
+
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.me-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+   
+}
+.me-col h1{
+    padding-top: 0;
+}
+.me-col p{
+    padding: 15px 0 25px;
+}
+.me{
+    margin-left: 1100px; /* Add some margin for spacing */
+    margin-top: -200px;
+}
+.me-col h4{
+    padding: 15px 0 25px;
+}
+
+.our-btn {
+    background-color: #000000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #000000;
+    transition: all 0.3s ease;
+  }
+  
+  .our-btn:hover {
+    background-color: #fff;
+    color: #000000;
+  }
+
+
+
+.about-baseball{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    margin-top: -150px;
+}
+.about-col{
+    flex-basis: 48%;
+    margin-top: -500px;
+    margin-left: 850px;
+    padding-bottom: 200px;
+   
+}
+.about-col h1{
+    padding-top: 0;
+
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+.baseball{
+    padding-top: 100px;
+    margin-top: -350px;
+    padding-bottom: 200px;
+}
+.about-col h4{
+    padding: 15px 0 25px;
+
+}
+
+
+
+.valorant{
+    width: 80%;
+    margin: auto;
+    padding-top: -100px;
+    padding-bottom: 60px;
+    margin-top: -150px;
+}
+.val{
+    flex-basis: 48%;
+    margin-top: -300px;
+    margin-left: 850px;
+    padding-bottom: 200px;
+}
+.val h1{
+    padding: 15px 0 25px;
+
+}
+.val p{
+    padding: 15px 0 25px;
+}
+.valpic{
+    padding-top: 100px;
+    margin-top: 10px;
+
+}
+.val h5{
+    padding: 15px 0 25px;
 }

@@ -1,54 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>About Me</title>
-  <link rel="stylesheet" href="aboutstyle.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-</head>
+<html>
+	<head>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>Michael's Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+	</head>
+	<!-- -->
+	<body>
+		<!-- makes a class name header, which you can open in css file -->
+		<section class="sub-header"> 
+				<nav>
+					<!-- Adding an anchor tag to be able to click on the logo-->
+					<a href="index.html"><img src="images/logo.png"></a>
+						<!-- What are ul and li?-->
+					<div class="nav-links" id="navLinks">
+					<!--
+						-->
+						<i class="fa fa-times" onclick="hideMenu()"></i>
 
-<body>
+
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="projects.html">PROJECTS</a></li>
+							
+						</ul>
+					</div>
 
 
-    <section class="header">
-        <nav>
-            <a href= "index.html"> <img src="images/logo.png"</a>
-            <div class = "nav-links">
-                <ul>
-                    <li><a href = "index.html"> HOME</a></li>
-                    <li><a href = "about.html"> ABOUT</a></li>
-                    <li><a href = "projects.html"> PROJECTS</a></li>
-                    <li><a href = "courses.html"> COURSES</a></li>
-                    <li><a href = "contact.html"> CONTACT</a></li>
-                </ul>
+				</nav>
+				
+				<!-- Makes the title of the page to appear-->
+				<h1>More About Me</h1>
+		</section>
+
+		<!-- Section About my computer science knowledge-->
+		<section class="about-us">
+			<div class="row">
+
+				<div class="me-col">
+					<h1>
+                        Spark to CS pursuit
+                    </h1>
+					<p>
+                        With the technological advancements and the growing technological industry, the field of computer science peaked my interest!<br> 
+						Being able to comprehend and learn such a powerful tool of computer science would open many doors to future interests of work.<br>
+						I decided to pursue my learning at the George Washington University.
+                    </p>
+
+						<h4>
+                            Feel Free to Explore my Projects (press the button :D)
+                        </h4>
+
+					<a 
+                    href="project.html" class="our-btn color-btn">Learn More
+                    </a>
+                    
+                    <div class="me">
+                        <img src="images/suit.jpg" style="width: 100%;">
+                    </div>
+
+				</div>
+
+
+			</div>
+		</section>
+
+		<!-- Section About my swimming since younger-->
+		<section class="about-baseball">
+
+            <div class="baseball">
+                <img src="images/baseball.jpg" style="width: 50%;">
             </div>
-        </nav>
 
-    <img class ="Profile-pic" src="images/suit.jpg" alt="Profile picture">
+			<div class="row">
 
-  <main>
-    
-    <h2>Hi, I'm Michael Yoo!</h2>
-    <p>I am a Sophmore Computer science major. I love fishing, playing games, askldjaskldj. I am passionate about blah blah blah.</p>
-    
-    <h3>Education</h3>
-    <ul>
-      <li>[Name of degree or program] from [Name of institution] (Graduated [Year])</li>
-      <li>[Name of degree or program] from [Name of institution] (Graduated [Year])</li>
-    </ul>
+				<div class="about-col">
+					<h1>Swimming :D </h1>
+					<p>Started swimming at the age of 6 and I still continue to swim with the George Washinton Club Swim team!<br> 
+						Now 14 years, I've been involved with this sport and it has always been a way<br>  for me improve in various mental and physical aspects!</p>
+						<h4> Without a doubt would love to talk about anything swim related!</h4>
+					
+				</div>
 
-    <h3>Experience</h3>
-    <ul>
-      <li>[Name of job or internship] at [Name of company] (Duration: [Start date] - [End date])</li>
-      <li>[Name of job or internship] at [Name of company] (Duration: [Start date] - [End date])</li>
-    </ul>
+			</div>
+		</section>
 
-  </main>
+		<!--Section about my hobby of golf-->
+		<section class="valorant">
+			<div class="row">
+
+                <div class="valpic">
+					<img src="images/valorant.jpg" style="width: 50%;">
+				</div>
+
+				<div class="val">
+					<h1>Golfing! :D </h1>
+					<p>Main Hobby picked up during and post quaratine period. Although I started playing golf recently, many many hours were put into the range and field. 
+						Recording and watching my swing, I enjoy spending time working on my technique. 
+						I'm addicted to perfecting the game as there is always something to work on. 
+					</p>
+					<h5>I'm super passionate about golfing and you'll probably catch me playing golf when I'm not working :D</h5>
 
 
-</body>
+
+				</div>
+
+			</div>
+		</section>
+
+		
+
+
+	</body>
 
 </html>
