@@ -195,7 +195,7 @@ nav img{
 }
 .val{
     flex-basis: 48%;
-    margin-top: -300px;
+    margin-top: -350px;
     margin-left: 850px;
     padding-bottom: 200px;
 }
@@ -226,9 +226,29 @@ nav img{
     text-decoration: none;
     border: 2px solid #000000;
     transition: all 0.3s ease;
+    margin-left: 100px;
   }
   
   .vbtn:hover {
     background-color: #fff;
     color: #ff0000;
+  }
+
+  .vbtn-mdl{
+    background-color: #000000;
+    color: #ffdd00;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #000000;
+    transition: all 0.3s ease;
+    margin-left: 50px;
+  }
+  
+  .vbtn-mdl:hover {
+    background-color: #671bf6;
+    color: #ffdd00;
   }
