@@ -93,7 +93,7 @@ nav img{
 
 /* New section for the about us section*/
 .sub-header{
-    min-height: 50vh;
+    min-height: 45vh;
     width: 100%;
     background-image: url(images/background.png);
     background-position: relative;
@@ -112,8 +112,8 @@ nav img{
 .about-us{
     width: 80%;
     margin: auto;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 .me-col{
     flex-basis: 48%;
