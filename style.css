@@ -1,19 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.header{
+
+.header {
     min-height: 100vh;
     width: 100%;
     background-image: url(images/background.png);
-    background-position: center;
+    background-position: bottom center;
     background-size: cover;
-    
+
 }
 
-nav{
+nav {
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
@@ -21,16 +22,16 @@ nav{
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-nav img{
+nav img {
     width: 150px;
 }
 
-.nav-links{
+.nav-links {
     flex: 1;
     text-align: right;
 }
 
-.nav-links ul li{
+.nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
@@ -38,32 +39,32 @@ nav img{
     transition: all 0.2s ease-in-out;
 }
 
-.nav-links ul li a{
+.nav-links ul li a {
     color: #000000;
     text-decoration: none;
     font-size: 16px;
 }
 
-.nav-links ul li::after{
+.nav-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
-    background:#ffffff ;
+    background: #ffffff;
     display: block;
     margin: auto;
     transition: 0.25s;
 }
 
-.nav-links ul li:hover::after{
+.nav-links ul li:hover::after {
     width: 100%;
 }
 
-.nav-links ul li:hover a{
+.nav-links ul li:hover a {
     color: #ffffff;
 }
 
-.text-box{
-    width: 90% ;
+.text-box {
+    width: 90%;
     color: #000000;
     position: absolute;
     top: 50%;
@@ -72,7 +73,11 @@ nav img{
     text-align: center;
 }
 
-.my-btn{
+.text-box h1 {
+    margin: 20px 0;
+}
+
+.my-btn {
     display: inline-block;
     text-decoration: none;
     color: #000000;
@@ -82,17 +87,18 @@ nav img{
     background: transparent;
     position: relative;
     cursor: pointer;
+    margin: 20px 0;
     transition: all 0.2s ease-in-out;
 }
 
-.my-btn:hover{
+.my-btn:hover {
     border: 1px solid #000000;
     background: #ffffff;
     transition: 1s;
 }
 
 /* New section for the about us section*/
-.sub-header{
+.sub-header {
     min-height: 45vh;
     width: 100%;
     background-image: url(images/background.png);
@@ -101,7 +107,8 @@ nav img{
     position: static;
 
 }
-.sub-header h1{
+
+.sub-header h1 {
     margin-top: 150px;
     text-align: center;
     color: #000000;
@@ -109,32 +116,52 @@ nav img{
 
 
 
-.about-us{
-    width: 80%;
+
+
+/* About Section  */
+/* About Section  */
+/* About Section  */
+/* About Section  */
+.about-us {
+    margin-top: 40px;
+    width: 90%;
     margin: auto;
     padding-top: 60px;
     padding-bottom: 40px;
 }
-.me-col{
-    flex-basis: 48%;
-    padding: 30px 2px;
-   
-}
-.me-col h1{
-    padding-top: 0;
-}
-.me-col p{
-    padding: 15px 0 25px;
-}
-.me{
-    margin-left: 1100px; /* Add some margin for spacing */
-    margin-top: -200px;
-}
-.me-col h4{
-    padding: 15px 0 25px;
+
+.about-us .title h1 {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.our-btn {
+/* About Container  */
+.about-container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+/* About Context  */
+.about-us .about-context .context-title h1 {
+    padding: 20px 0;
+}
+
+/* Context Info  */
+.about-us .about-context .context-info {
+    padding-bottom: 20px;
+}
+
+.about-us .about-context .context-title h4 {
+    padding-bottom: 20px;
+}
+
+.about-us .more-button {
+    margin: 20px 0;
+}
+
+.about-us .more-button .our-btn {
     background-color: #000000;
     color: #fff;
     font-size: 16px;
@@ -145,78 +172,172 @@ nav img{
     text-decoration: none;
     border: 2px solid #000000;
     transition: all 0.3s ease;
-  }
-  
-  .our-btn:hover {
-    background-color: #fff;
-    color: #000000;
-  }
+}
 
 
+/* About Me Photo  */
+.about-us .me-photo img {
+    width: 100%;
+}
 
-.about-baseball{
-    width: 80%;
+/* Responsive About Section  */
+@media screen and (max-width: 992px) {
+    .about-us .about-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-us .about-context {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .about-us .about-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* About Baseball Section */
+.about-baseball {
+    width: 90%;
     margin: auto;
-    padding-top: 50px;
-    padding-bottom: 60px;
-    margin-top: -150px;
-}
-.about-col{
-    flex-basis: 48%;
-    margin-top: -500px;
-    margin-left: 850px;
-    padding-bottom: 200px;
-   
-}
-.about-col h1{
-    padding-top: 0;
-
-}
-.about-col p{
-    padding: 15px 0 25px;
-}
-.baseball{
-    padding-top: 100px;
-    margin-top: -350px;
-    padding-bottom: 200px;
-}
-.about-col h4{
-    padding: 15px 0 25px;
-
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 
+/* Baseball Container  */
+.about-baseball .baseball-container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.about-baseball .baseball {
+    margin-top: -20rem;
+}
+
+.about-baseball .baseball img {
+    max-width: 100%;
+}
+
+/* Baseball Context  */
+.about-baseball .baseball-context .baseball-title h1 {
+    padding: 20px 0;
+}
+
+.about-baseball .baseball-context .baseball-info {
+    padding-bottom: 20px;
+}
+
+.about-baseball .baseball-context .baseball-title h4 {
+    padding-bottom: 20px;
+}
+
+/* About Baseball Section Responsive  */
+@media screen and (max-width: 1280px) {
+    .about-baseball .baseball {
+        margin-top: -17rem;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .about-baseball .baseball {
+        margin-top: -15rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .about-baseball .baseball {
+        margin-top: -12rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about-baseball .baseball {
+        margin-top: 0;
+    }
+
+    .about-baseball .baseball-context {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
 
 
-.valorant{
-    width: 80%;
+@media screen and (max-width: 645px) {
+    .about-baseball .baseball-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-baseball .baseball {
+        order: calc(2);
+    }
+
+    .about-baseball .baseball-context {
+        order: calc(1);
+    }
+}
+
+
+
+
+
+
+
+/* valorant Section  */
+/* valorant Section  */
+/* valorant Section  */
+.valorant {
+    width: 90%;
     margin: auto;
-    padding-top: -100px;
-    padding-bottom: 60px;
-    margin-top: -200px;
-}
-.val{
-    flex-basis: 48%;
-    margin-top: -350px;
-    margin-left: 850px;
-    padding-bottom: 200px;
-}
-.val h1{
-    padding: 15px 0 25px;
-
-}
-.val p{
-    padding: 15px 0 25px;
-}
-.valpic{
-    padding-top: 100px;
-    margin-top: 10px;
-
-}
-.val h5{
-    padding: 15px 0 25px;
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 
-.vbtn {
+/* valorant Container  */
+.valorant .valorant-container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+/* valorant Photo  */
+.valorant .valorant-container .valpic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.valorant .valorant-container .valpic img {
+    max-width: 100%;
+}
+
+
+/* valorant Context  */
+
+/* Val Title  */
+.valorant .valorant-container .val-context .val-title h1 {
+    padding: 20px 0;
+}
+
+/* Val Links  */
+.valorant .valorant-container .val-context .val-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.valorant .valorant-container .val-context .vbtn {
     background-color: #000000;
     color: #ff0000;
     font-size: 16px;
@@ -226,16 +347,15 @@ nav img{
     border-radius: 5px;
     text-decoration: none;
     border: 2px solid #000000;
-    transition: all 0.3s ease;
-    margin-left: 100px;
-  }
-  
-  .vbtn:hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.valorant .valorant-container .val-context .vbtn:hover {
     background-color: #fff;
     color: #ff0000;
-  }
+}
 
-  .vbtn-mdl{
+.valorant .valorant-container .val-context .vbtn-mdl {
     background-color: #000000;
     color: #ffdd00;
     font-size: 16px;
@@ -245,13 +365,113 @@ nav img{
     border-radius: 5px;
     text-decoration: none;
     border: 2px solid #000000;
-    transition: all 0.3s ease;
-    margin-left: 50px;
-  }
-  
-  .vbtn-mdl:hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.valorant .valorant-container .val-context .vbtn-mdl:hover {
     background-color: #671bf6;
     color: #ffdd00;
-  }
+}
 
-  
+/* valorant Info  */
+.valorant .valorant-container .val-context .val-info {
+    margin: 20px 0;
+}
+
+/* valorant Responsive Section  */
+@media screen and (max-width: 992px) {
+    .valorant .valorant-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .valorant .valorant-container {
+        grid-template-columns: 1fr;
+    }
+
+    .valorant .valorant-container .valpic {
+        order: calc(2);
+    }
+
+    .valorant .valorant-container .val-context {
+        order: calc(1);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .valorant .valorant-container .val-context .vbtn {
+        padding: 10px 10px;
+    }
+
+    .valorant .valorant-container .val-context .vbtn-mdl {
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 332px) {
+    .valorant .valorant-container .val-context .vbtn {
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+
+    .valorant .valorant-container .val-context .vbtn-mdl {
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+/* PROJECTS*/
+/* PROJECTS*/
+/* PROJECTS*/
+/* PROJECTS*/
+.about-search {
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.about-search .title h1 {
+    text-align: center;
+}
+
+.search {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.search h1 {
+    padding-top: 0;
+}
+
+.search p {
+    padding: 15px 0 25px;
+}
+
+
+
+.about-gwack {
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.gwack {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.gwack h1 {
+    padding-top: 0;
+}
+
+.gwack p {
+    padding: 15px 0 25px;
+}
