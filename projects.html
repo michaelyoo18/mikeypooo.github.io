@@ -1,137 +1,101 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-        <title>Michael's Website</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    
-	</head>
-	<!-- -->
-	<body>
-		<!-- makes a class name header, which you can open in css file -->
-		<section class="sub-header"> 
-				<nav>
-					<!-- Adding an anchor tag to be able to click on the logo-->
-					<a href="index.html"><img src="images/logo.png"></a>
-						<!-- What are ul and li?-->
-					<div class="nav-links" id="navLinks">
-					<!--
-						-->
-						<i class="fa fa-times" onclick="hideMenu()"></i>
 
+<head>
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+	<title>Michael's Website</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
-						<ul>
-							<li><a href="index.html">HOME</a></li>
-							<li><a href="about.html">ABOUT</a></li>
-							<li><a href="projects.html">PROJECTS</a></li>
-							
-						</ul>
-					</div>
+</head>
+<!-- -->
 
-
-				</nav>
-				
-				<!-- Makes the title of the page to appear-->
-				<h1>My Projects</h1>
-		</section>
-
-		<!-- Section About my computer science knowledge-->
-		<section class="about-us">
-			<div class="row">
-
-				<div class="me-col">
-					<h1>
-                        Directory Search Engine <br>
-                    </h1>
-					<p>
-                        Computers 
-                    </p>
-
-						<h4>
-                            Feel Free to Explore my Projects!
-                        </h4>
-
-					<a 
-                    href="project.html" class="our-btn color-btn">Learn More
-                    </a>
-                    
-                    <div class="me">
-                        <img src="images/suit.jpg" style="width: 100%;">
-                    </div>
-
+<body>
+	<!-- makes a class name header, which you can open in css file -->
+	<header class="header">
+		<nav>
+			<a href="index.html"> <img src="images/logo.png" </a>
+				<div class="nav-links">
+					<ul>
+						<li><a href="index.html"> HOME</a></li>
+						<li><a href="about.html"> ABOUT</a></li>
+						<li><a href="projects.html"> PROJECTS</a></li>
+					</ul>
 				</div>
+		</nav>
+
+		<div class="text-box">
+			<h1>Michael Yoo</h1>
+			<!-- Text/words     note: <br> is used to change the line -->
+			<p>Welcome to my page!
+				<br>My name is Michael Yoo and I am a student of George Washington University<br>pursuing a Bachelor of
+				Science degree in Computer Science
+			</p>
+			<!-- Anchor Tag for a button-->
+			<!--<a href="">Button Name Here</a>-->
+			<a href="#moreInfo" class="my-btn">More Info</a>
+		</div>
+
+	</header>
+
+	<!-- Section About my computer science knowledge-->
+	<section id="moreInfo" class="about-search">
+		<div class="title">
+			<h1>My Projects</h1>
+
+		</div>
+		<div class="row">
+
+			<div class="search">
+				<h1>
+					Directory Search Engine <br>
+				</h1>
+				<p>
+					In this project, I implemented a document retrieval system that searches through a set of documents
+					to determine the relevance of the documents with respect to a search phrase/query.
+				</p>
+
+				<a href="projects.html" class="our-btn color-btn">Source Code
+				</a>
+
 
 
 			</div>
-		</section>
-
-		<!-- Section About my swimming since younger-->
-		<section class="about-baseball">
-
-            <div class="baseball">
-                <img src="images/baseball.jpg" style="width: 50%;">
-            </div>
-
-			<div class="row">
-
-				<div class="about-col">
-					<h1>Baseball</h1>
-					<p> Baseball has been a passion of mine since I was a child. From playing catch in the backyard with my dad to 
-						attending games with friends, I have always been drawn to the sport. What I love most about baseball is the 
-						combination of athleticism, strategy, and teamwork that it involves. Whether you're hitting a home run or 
-						making a diving catch in the outfield, there's a sense of satisfaction that comes with executing a play to perfection.
-						Baseball will always hold a special place in my heart, and I look forward to continuing to enjoy the sport for years to come.
-					</p>
-						<h4></h4>
-					
-				</div>
-
-			</div>
-		</section>
-
-		<!--Section about my hobby of golf-->
-		<section class="valorant">
-			<div class="row">
-
-                <div class="valpic">
-					<img src="images/valorant.jpg" style="width: 50%;">
-				</div>
 
 
+		</div>
+	</section>
+
+	<!-- Section About my swimming since younger-->
+	<section class="about-gwack">
 
 
-				<div class="val">
-					<h1>Valorant
-							<a 
-							href="https://tracker.gg/valorant/profile/riot/Mikey%234484/overview?season=all" class="vbtn">view my stats!
-							</a>
+		<div class="row">
 
-							<a 
-							href="https://medal.tv/u/mikeypooo?invite=ur-MSw3Q0wsNTM2ODg4MjMs" class="vbtn-mdl">view my clips!
-							</a>
+			<div class="gwack">
+				<h1> GWack (GW Slack Simulator)</h1>
+				<p>
+					in this project, you will be write a client and server that implements a chat room, similar to Slack
+					(or GWack!). Your client software should be GUI based, and your server software will be command line
+					based.
+					I added 4 different themes into my client gui There is a light mode and dark mode a mode called sun
+					in your eyes which blinds the user with green and yellow rgx(is a weapon skin name from a game i
+					play called valorant) is a theme with blue black and gray color scheme,
 
-					</h1>
-
-					<p>Valorant is a free-to-play first-person shooter video game developed by Riot Games. The game is set in a near-future Earth where players take on the roles of "agents" with unique abilities, and participate in matches with two teams of five players each.
-                        The objective of the game is to plant or defuse a bomb or to eliminate the other team before time runs out. The game has a tactical focus, with players needing to communicate and coordinate their actions to win matches. 
-                        The game features a wide range of weapons and equipment, as well as a ranking system for competitive play.<br>
-                        <br>
-                        Currently I am a top player in the game ranking in the top .01% of players in the North American Region. I have invested countless hours in hopes of reaching the top rank of "Radiant", but to no avail. I will continue to strive to reach the top where only the elite stand. 
-					</p>
-
-
-
-				</div>
+					You can test them through the dropdown menu in the GWackClientGUI
+				</p>
+				<h4></h4>
 
 			</div>
-		</section>
 
-		
+		</div>
+	</section>
 
 
-	</body>
+
+
+</body>
 
 </html>
