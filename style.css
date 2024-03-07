@@ -332,25 +332,25 @@ section {
 }
 
 .experience-bar {
-  background-color: #e0e0e0; /* Light grey background */
-  border-radius: 5px; /* Rounded corners */
-  height: 10px; /* Fixed height */
-  margin-top: 5px; /* Space between the text and the bar */
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  height: 10px;
+  margin-top: 5px;
 }
 
 .experience-bar.experienced {
-  width: 100%; /* Full width for experienced */
-  background-color: #4CAF50; /* Green for experienced */
+  width: 100%;
+  background-color: #4CAF50;
 }
 
 .experience-bar.intermediate {
-  width: 75%; /* 75% width for intermediate */
-  background-color: #FFCA28; /* Yellow for intermediate */
+  width: 75%;
+  background-color: #FFCA28;
 }
 
 .experience-bar.basic {
-  width: 50%; /* 50% width for basic */
-  background-color: #F44336; /* Red for basic */
+  width: 50%;
+  background-color: #F44336;
 }
 
 
@@ -418,29 +418,28 @@ article .icon {
 }
 
 /* The Modal (background) */
-/* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 2; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 2;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0,0,0,0.6); /* Black w/ opacity for backdrop */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.6); 
 }
 
 /* Modal Content Box */
 .modal-content {
   position: relative;
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto; 
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Add some shadow for depth */
-  width: 90%; /* Adapt width to mobile-first */
-  max-width: 600px; /* Maximum width */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+  width: 90%; 
+  max-width: 600px; 
 }
 
 /* The Close Button */
@@ -463,20 +462,20 @@ article .icon {
 /* Modal Title Style */
 #modalTitle {
   margin-bottom: 15px;
-  color: #333; /* Dark grey color for contrast */
-  font-size: 24px; /* Slightly larger font for the title */
+  color: #333; 
+  font-size: 24px; 
 }
 
 /* Modal Description List Style */
 #modalDescription ul {
-  list-style-type: disc; /* Default disc style for bullet points */
-  padding-left: 20px; /* Proper indentation for readability */
+  list-style-type: disc; 
+  padding-left: 20px; 
 }
 
 #modalDescription li {
-  margin-bottom: 10px; /* Space out the list items for better readability */
-  line-height: 1.6; /* Increase line height for improved legibility */
-  color: #555; /* Slightly lighter text for the description for softer contrast */
+  margin-bottom: 10px;
+  line-height: 1.6; 
+  color: #555; 
 }
 
 
