@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Michael Yoo</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Michael Yoo</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>  
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Michael Yoo profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I am</p>
+        <h1 class="title">Michael Yoo</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/MYooResume.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/michael-yoo-a58075188/', '_blank')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/myoo18', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/computer.jpg"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p> < 1 year <br />Software Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/gdub.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.S. Computer Science & Minor in Data Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              <p>Ever since I was a kid, my passion for computers started with a deep-seated love for video games. 
+                The thrill of downloading Minecraft mods was more than just a boost to my gaming adventures; it was 
+                a gateway that piqued my interest in the mechanics operating beneath the surface. This initial dive 
+                into computing didn't just fuel hours of entertainment—it transformed a casual pastime into a profound 
+                interest in computer science. That initial spark, along with the exhilaration of uncovering new knowledge, 
+                has been the driving force behind my ongoing eagerness to learn and create within the world of modern technology.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+<!------------------------------------------------------------------------------- -->
+    <section id="experience">
+      <p class="section__text__p1">Learn About My Professional</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Developer/Engineer Intern - KnackWorks</h2>
+            <p class="experience-dates">May 2023 - August 2023</p>
+            <ul class="experience-highlights">
+              <li>
+                Focused on the DaaS project, leveraging technologies such as GoLang, Python, Kubernetes, ELK, and Kafka to drive advancements in data accessibility and visualization, directly contributing to a 40% improvement in query response times.
+              </li>
+              <li>
+                Led the deployment of Logstash within a Kubernetes cluster for PostgreSQL-to-Elasticsearch data migration, resulting in a 30% enhancement in search functionality.
+              </li>
+              <li>
+                Conceived and executed proof of concepts for advanced Kibana visualizations and Elasticsearch data integration, achieving an 80% reduction in time to import and visualize data.
+              </li>
+              <li>
+                Developed a GoLang S3-compatible endpoint for direct storage querying and designed a system for near real-time storage condition visualizations, reducing data retrieval and analysis times by 15%.
+              </li>
+              <li>
+                Actively participated in agile development sprints, demonstrating strong collaboration and communication skills.
+              </li>
+              <li>
+                Facilitated project success by engaging with stakeholders to clarify requirements and expectations, ensuring alignment of technical solutions with project goals.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+
+    <section id="skills">
+      <p class="section__text__p1">Take a Look at My</p>
+      <h1 class="title">Technical Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Programming Languages Container -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+
+              <article>
+                <img src="./assets/java-logo.jpg" alt="Java icon" class="icon" />
+                <div>
+                  <h3>Java</h3>
+                  <div class="experience-level"><p>Experienced</p></div>
+                  <div class="experience-bar experienced"></div>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/python-logo.png" alt="python icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <div class="experience-level"><p>Experienced</p></div>
+                  <div class="experience-bar experienced"></div>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/c-logo.png" alt="c icon" class="icon" />
+                <div>
+                  <h3>C</h3>
+                  <div class="experience-level"><p>Experienced</p></div>
+                  <div class="experience-bar experienced"></div>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/go-logo.png" alt="go icon" class="icon" />
+                <div>
+                  <h3>GoLang</h3>
+                  <div class="experience-level"><p>Intermediate</p></div>
+                  <div class="experience-bar intermediate"></div>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/html-logo.png" alt="HTML icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <div class="experience-level"><p>Experienced</p></div>
+                  <div class="experience-bar experienced"></div>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/css-logo.png" alt="CSS icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <div class="experience-level"><p>Experienced</p></div>
+                  <div class="experience-bar experienced"></div>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/js-logo.png" alt="js icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <div class="experience-level"><p>Intermediate</p></div>
+                  <div class="experience-bar intermediate"></div>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/sql-logo.png" alt="sql icon" class="icon" />
+                <div>
+                  <h3>SQL</h3>
+                  <div class="experience-level"><p>Experienced</p></div>
+                  <div class="experience-bar experienced"></div>
+                </div>
+              </article>
+              
+
+            </div>
+          </div>
+          <!-- Tools & Technologies Container -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tools & Technologies</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/git-logo.png" alt="Git icon" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <div class="experience-level"><p>Experienced</p></div>
+                  <div class="experience-bar experienced"></div>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/linux-logo.png" alt="linux icon" class="icon" />
+                <div>
+                  <h3>Linux</h3>
+                  <div class="experience-level"><p>Experienced</p></div>
+                  <div class="experience-bar experienced"></div>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/docker-logo.png" alt="Docker icon" class="icon" />
+                <div>
+                  <h3>Docker</h3>
+                  <div class="experience-level"><p>Intermediate</p></div>
+                  <div class="experience-bar intermediate"></div>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/kube-logo.png" alt="Kubernetes icon" class="icon" />
+                <div>
+                  <h3>Kubernetes</h3>
+                  <div class="experience-level"><p>Experienced</p></div>
+                  <div class="experience-bar experienced"></div>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/postgresql-logo.png" alt="PostgreSQL icon" class="icon" />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <div class="experience-level"><p>Intermediate</p></div>
+                  <div class="experience-bar intermediate"></div>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/mongo-logo.jpg" alt="MongoDB icon" class="icon" />
+                <div>
+                  <h3>MongoDB</h3>
+                  <div class="experience-level"><p>Experienced</p></div>
+                  <div class="experience-bar experienced"></div>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/aws-logo.png" alt="aws icon" class="icon" />
+                <div>
+                  <h3>AWS</h3>
+                  <div class="experience-level"><p>Experienced</p></div>
+                  <div class="experience-bar experienced"></div>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/azure-logo.png" alt="azure icon" class="icon" />
+                <div>
+                  <h3>Azure</h3>
+                  <div class="experience-level"><p>Intermediate</p></div>
+                  <div class="experience-bar intermediate"></div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/directory-search-proj.png"
+                alt="Directory Search Engine"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Directory Search Engine</h2>
+            <div class="coding-language-container">
+              <img src="./assets/c-logo.png" alt="Language Logo" class="icon"/>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/myoo18/Directory-Search-Engine', '_blank')">Github</button>
+              <button class="btn btn-color-1 description-btn" data-description="Starting the Program: When the program begins, it sets up a Hashmap to efficiently store and access data. 
+              The user decides how big this structure should be.||Training: The program fills this hashmap with information from a bunch of files in a specific directory. It doesn't matter 
+              how many files there are, thanks to a tool called glob_t that handles the file counting.||User Input: Once the training is done, the program waits for the user to type in some 
+              keywords they want to search for. The program will keep running until the user decides to stop it by pressing 'X'.||Searching and Ranking: When the user enters a search query, 
+              the program looks through the hashmap to find and rank the documents based on how relevant they are to the query. The ranking is done using a method called tf-idf 
+              (term frequency-inverse document frequency), which helps determine how important a word is in a document compared to a collection of documents.||Outputting Results: 
+              The ranked list of documents is then saved to a new file called search_scores.txt, with the most relevant document at the top and the least relevant at the bottom.||Cleaning Up: 
+              Once the user is done and presses 'X', the program makes sure to free up any memory it used and gets rid of the hashmap structure before closing.">Description</button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/gwackslack.jpg"
+                alt="Directory Search Engine"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">GWack Slack Simulator</h2>
+            <div class="coding-language-container">
+              <img src="./assets/java-logo.jpg" alt="Language Logo" class="icon"/>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/myoo18/GWack-Slack-Simulator', '_blank')">Github</button>
+              <button class="btn btn-color-1 description-btn" data-description="The GWack Slack Simulator is a Java and Swing-based chat application showcasing real-time messaging with a client-server 
+              architecture.||Theme Customization: It offers four themes - light mode, dark mode, a 'sun in your eyes' theme, and an 'RGX' theme inspired by Valorant weapon skins, switchable via a dropdown 
+              menu.||Advanced OOP: Utilizes object-oriented programming principles, threading for concurrent operations, and interactive UI elements through item and key listeners.||Interactive Interface: 
+              The GWackClientGUI class, extending JFrame, handles theme changes through ItemListener. Concurrently, the Client class manages connections as a Thread and uses KeyListener for message sending 
+              via the enter key.||Objective: To provide an engaging and customizable chat experience, enabling users to interact and change themes according to their preferences.">Description</button>
+          </div>
+          </div>
+
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/shoppincart.png"
+                alt="Directory Search Engine"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Shopping cart Web Application</h2>
+            <div class="coding-language-container">
+              <img src="./assets/sql-logo.png" alt="Language Logo" class="icon"/>
+              <img src="./assets/python-logo.png" alt="Language Logo" class="icon"/>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/myoo18/GWack-Slack-Simulator', '_blank')">Github</button>
+              <button class="btn btn-color-1 description-btn" data-description="Product Display: Showcases products in various categories with their quantity and price visible.||Search Functionality: 
+              Enables item searches by name or category browsing.||User Authentication: Restricts shopping cart functions to logged-in users. A demo account ('testuser' with 'testpass') is provided for 
+              testing.||Shopping Cart: Allows users to manage their cart with session variables, not stored in the database.||Checkout Process: Reduces item quantity in the database upon checkout to reflect 
+              transactions.||Order History: Users can view past orders, including item lists and total costs.||Database Management: Utilizes a structured database for table management, with a Python 
+              'fill' script for database maintenance.||Input Validation: Ensures input is valid to prevent negative or oversized purchases.||Minimal Web Interface: Features a straightforward design 
+              with basic styling and functionality.">Description</button>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+
+      <!-- <div class="experience-details-container">
+        <div class="about-containers">
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/directory-search-proj.png"
+                alt="Directory Search Engine"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Directory Search Engine</h2>
+            <div class="coding-language-container">
+              <img src="./assets/c-logo.png" alt="Language Logo" class="icon"/>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/myoo18/Directory-Search-Engine'">Github</button>
+              <button class="btn btn-color-1 description-btn" data-description="Starting the Program: When the program begins, it sets up a Hashmap to efficiently store and access data. 
+              The user decides how big this structure should be.||Training: The program fills this hashmap with information from a bunch of files in a specific directory. It doesn't matter 
+              how many files there are, thanks to a tool called glob_t that handles the file counting.||User Input: Once the training is done, the program waits for the user to type in some 
+              keywords they want to search for. The program will keep running until the user decides to stop it by pressing 'X'.||Searching and Ranking: When the user enters a search query, 
+              the program looks through the hashmap to find and rank the documents based on how relevant they are to the query. The ranking is done using a method called tf-idf 
+              (term frequency-inverse document frequency), which helps determine how important a word is in a document compared to a collection of documents.||Outputting Results: 
+              The ranked list of documents is then saved to a new file called search_scores.txt, with the most relevant document at the top and the least relevant at the bottom.||Cleaning Up: 
+              Once the user is done and presses 'X', the program makes sure to free up any memory it used and gets rid of the hashmap structure before closing.">Description</button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/directory-search-proj.png"
+                alt="Directory Search Engine"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Directory Search Engine</h2>
+            <div class="coding-language-container">
+              <img src="./assets/c-logo.png" alt="Language Logo" class="icon"/>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/myoo18/Directory-Search-Engine'">Github</button>
+              <button class="btn btn-color-1 description-btn" data-description="Starting the Program: When the program begins, it sets up a Hashmap to efficiently store and access data. 
+              The user decides how big this structure should be.||Training: The program fills this hashmap with information from a bunch of files in a specific directory. It doesn't matter 
+              how many files there are, thanks to a tool called glob_t that handles the file counting.||User Input: Once the training is done, the program waits for the user to type in some 
+              keywords they want to search for. The program will keep running until the user decides to stop it by pressing 'X'.||Searching and Ranking: When the user enters a search query, 
+              the program looks through the hashmap to find and rank the documents based on how relevant they are to the query. The ranking is done using a method called tf-idf 
+              (term frequency-inverse document frequency), which helps determine how important a word is in a document compared to a collection of documents.||Outputting Results: 
+              The ranked list of documents is then saved to a new file called search_scores.txt, with the most relevant document at the top and the least relevant at the bottom.||Cleaning Up: 
+              Once the user is done and presses 'X', the program makes sure to free up any memory it used and gets rid of the hashmap structure before closing.">Description</button>
+            </div>
+          </div>
+
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/directory-search-proj.png"
+                alt="Directory Search Engine"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Directory Search Engine</h2>
+            <div class="coding-language-container">
+              <img src="./assets/c-logo.png" alt="Language Logo" class="icon"/>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/myoo18/Directory-Search-Engine'">Github</button>
+              <button class="btn btn-color-1 description-btn" data-description="Starting the Program: When the program begins, it sets up a Hashmap to efficiently store and access data. 
+              The user decides how big this structure should be.||Training: The program fills this hashmap with information from a bunch of files in a specific directory. It doesn't matter 
+              how many files there are, thanks to a tool called glob_t that handles the file counting.||User Input: Once the training is done, the program waits for the user to type in some 
+              keywords they want to search for. The program will keep running until the user decides to stop it by pressing 'X'.||Searching and Ranking: When the user enters a search query, 
+              the program looks through the hashmap to find and rank the documents based on how relevant they are to the query. The ranking is done using a method called tf-idf 
+              (term frequency-inverse document frequency), which helps determine how important a word is in a document compared to a collection of documents.||Outputting Results: 
+              The ranked list of documents is then saved to a new file called search_scores.txt, with the most relevant document at the top and the least relevant at the bottom.||Cleaning Up: 
+              Once the user is done and presses 'X', the program makes sure to free up any memory it used and gets rid of the hashmap structure before closing.">Description</button>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section> -->
+
+
+
+
+    
+    <section id="contact">
+      <p class="section__text__p1">If You want to Get in Touch,</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:mjyoo18@gmail.com">mjyoo18@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/michael-yoo-a58075188/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle">Project Title</h2>
+        <p id="modalDescription">Project description goes here...</p>
+      </div>
+    </div>
+
+  </body>
+</html>
