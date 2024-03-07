@@ -337,168 +337,182 @@
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/directory-search-proj.png"
-                alt="Directory Search Engine"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Directory Search Engine</h2>
-            <div class="coding-language-container">
-              <img src="./assets/c-logo.png" alt="Language Logo" class="icon"/>
-            </div>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/myoo18/Directory-Search-Engine', '_blank')">Github</button>
-              <button class="btn btn-color-1 description-btn" data-description="Starting the Program: When the program begins, it sets up a Hashmap to efficiently store and access data. 
-              The user decides how big this structure should be.||Training: The program fills this hashmap with information from a bunch of files in a specific directory. It doesn't matter 
-              how many files there are, thanks to a tool called glob_t that handles the file counting.||User Input: Once the training is done, the program waits for the user to type in some 
-              keywords they want to search for. The program will keep running until the user decides to stop it by pressing 'X'.||Searching and Ranking: When the user enters a search query, 
-              the program looks through the hashmap to find and rank the documents based on how relevant they are to the query. The ranking is done using a method called tf-idf 
-              (term frequency-inverse document frequency), which helps determine how important a word is in a document compared to a collection of documents.||Outputting Results: 
-              The ranked list of documents is then saved to a new file called search_scores.txt, with the most relevant document at the top and the least relevant at the bottom.||Cleaning Up: 
-              Once the user is done and presses 'X', the program makes sure to free up any memory it used and gets rid of the hashmap structure before closing.">Description</button>
-            </div>
-          </div>
+      
+      <div id="first-set-of-projects" class="project-set">
+        <button class="slider-arrow left-arrow" onclick="toggleProjects()">❮</button>
+        <button class="slider-arrow right-arrow" onclick="toggleProjects()">❯</button>
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/gwackslack.jpg"
-                alt="Directory Search Engine"
-                class="project-img"
-              />
+        <div class="experience-details-container">
+          <div class="about-containers">
+            
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/directory-search-proj.png"
+                  alt="Directory Search Engine"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Directory Search Engine</h2>
+              <div class="coding-language-container">
+                <img src="./assets/c-logo.png" alt="Language Logo" class="icon"/>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/myoo18/Directory-Search-Engine', '_blank')">Github</button>
+                <button class="btn btn-color-1 description-btn" data-description="When the program begins, it sets up a Hashmap to efficiently store and access data. 
+                The user decides how big this structure should be.||The program fills this hashmap with information from a bunch of files in a specific directory. It doesn't matter 
+                how many files there are, thanks to a tool called glob_t that handles the file counting.||Once the training is done, the program waits for the user to type in some 
+                keywords they want to search for. The program will keep running until the user decides to stop it by pressing 'X'.||When the user enters a search query, 
+                the program looks through the hashmap to find and rank the documents based on how relevant they are to the query. The ranking is done using a method called tf-idf 
+                (term frequency-inverse document frequency), which helps determine how important a word is in a document compared to a collection of documents.||
+                The ranked list of documents is then saved to a new file called search_scores.txt, with the most relevant document at the top and the least relevant at the bottom.||
+                Once the user is done and presses 'X', the program makes sure to free up any memory it used and gets rid of the hashmap structure before closing.">Description</button>
+              </div>
             </div>
-            <h2 class="experience-sub-title project-title">GWack Slack Simulator</h2>
-            <div class="coding-language-container">
-              <img src="./assets/java-logo.jpg" alt="Language Logo" class="icon"/>
-            </div>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/myoo18/GWack-Slack-Simulator', '_blank')">Github</button>
-              <button class="btn btn-color-1 description-btn" data-description="The GWack Slack Simulator is a Java and Swing-based chat application showcasing real-time messaging with a client-server 
-              architecture.||Theme Customization: It offers four themes - light mode, dark mode, a 'sun in your eyes' theme, and an 'RGX' theme inspired by Valorant weapon skins, switchable via a dropdown 
-              menu.||Advanced OOP: Utilizes object-oriented programming principles, threading for concurrent operations, and interactive UI elements through item and key listeners.||Interactive Interface: 
-              The GWackClientGUI class, extending JFrame, handles theme changes through ItemListener. Concurrently, the Client class manages connections as a Thread and uses KeyListener for message sending 
-              via the enter key.||Objective: To provide an engaging and customizable chat experience, enabling users to interact and change themes according to their preferences.">Description</button>
-          </div>
-          </div>
 
-          
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/shoppincart.png"
-                alt="Directory Search Engine"
-                class="project-img"
-              />
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/gwackslack.jpg"
+                  alt="Directory Search Engine"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">GWack Slack Simulator</h2>
+              <div class="coding-language-container">
+                <img src="./assets/java-logo.jpg" alt="Language Logo" class="icon"/>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/myoo18/GWack-Slack-Simulator', '_blank')">Github</button>
+                <button class="btn btn-color-1 description-btn" data-description="The GWack Slack Simulator is a Java and Swing-based chat application showcasing real-time messaging with a client-server 
+                architecture.||It offers four themes - light mode, dark mode, a 'sun in your eyes' theme, and an 'RGX' theme inspired by Valorant weapon skins, switchable via a dropdown 
+                menu.||Utilizes object-oriented programming principles, threading for concurrent operations, and interactive UI elements through item and key listeners.||
+                The GWackClientGUI class, extending JFrame, handles theme changes through ItemListener. Concurrently, the Client class manages connections as a Thread and uses KeyListener for message sending 
+                via the enter key.||To provide an engaging and customizable chat experience, enabling users to interact and change themes according to their preferences.">Description</button>
             </div>
-            <h2 class="experience-sub-title project-title">Shopping cart Web Application</h2>
-            <div class="coding-language-container">
-              <img src="./assets/sql-logo.png" alt="Language Logo" class="icon"/>
-              <img src="./assets/python-logo.png" alt="Language Logo" class="icon"/>
             </div>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/myoo18/GWack-Slack-Simulator', '_blank')">Github</button>
-              <button class="btn btn-color-1 description-btn" data-description="Product Display: Showcases products in various categories with their quantity and price visible.||Search Functionality: 
-              Enables item searches by name or category browsing.||User Authentication: Restricts shopping cart functions to logged-in users. A demo account ('testuser' with 'testpass') is provided for 
-              testing.||Shopping Cart: Allows users to manage their cart with session variables, not stored in the database.||Checkout Process: Reduces item quantity in the database upon checkout to reflect 
-              transactions.||Order History: Users can view past orders, including item lists and total costs.||Database Management: Utilizes a structured database for table management, with a Python 
-              'fill' script for database maintenance.||Input Validation: Ensures input is valid to prevent negative or oversized purchases.||Minimal Web Interface: Features a straightforward design 
-              with basic styling and functionality.">Description</button>
-            </div>
-          </div>
 
-          
+            
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/shoppincart.png"
+                  alt="Directory Search Engine"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Shopping cart WebApp</h2>
+              <div class="coding-language-container">
+                <img src="./assets/sql-logo.png" alt="Language Logo" class="icon"/>
+                <img src="./assets/python-logo.png" alt="Language Logo" class="icon"/>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/myoo18/Shopping-Cart-WebApp', '_blank')">Github</button>
+                <button class="btn btn-color-1 description-btn" data-description="Product Display Showcases products in various categories with their quantity and price visible.||Search Functionality feature 
+                enables item searches by name or category browsing.||User Authentication feature will restrict shopping cart functions to logged-in users only. A demo account ('testuser' with 'testpass') is provided for 
+                testing.||The shopping cart Allows users to manage their cart with session variables, not stored in the database.||Checkout Process reduces item quantity in the database upon checkout to reflect 
+                transactions.||Users can view past orders, including item lists and total costs.||Database Management: Utilizes a structured database for table management, with a Python 
+                'fill' script for database maintenance.||Input Validation is enabled to ensure input is valid to prevent negative or oversized purchases.||Features a straightforward design 
+                with basic styling and functionality.">Description</button>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+      
+      <div id="second-set-of-projects" class="project-set" style="display: none;">
+        <button class="slider-arrow left-arrow" onclick="toggleProjects()">❮</button>
+        <button class="slider-arrow right-arrow" onclick="toggleProjects()">❯</button>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/xv6.png"
+                  alt="xv6"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">xv6 Container Manager</h2>
+              <div class="coding-language-container">
+                <img src="./assets/c-logo.png" alt="Language Logo" class="icon"/>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/myoo18/xv6-container-mngmnt', '_blank')">Github</button>
+                <button class="btn btn-color-1 description-btn" data-description="This project involves implementing a container management system 
+                in the xv6 operating system, similar to Docker's functionality. The goal is to create isolated environments called containers, each with its own subset of the file 
+                system and limited system resources.||The system includes a Container Manager (CM) to handle requests for creating and managing containers, which 
+                are defined using a simple JSON format. Containers are restricted in terms of the number of processes they can create and the system resources they can access.|| 
+                The project also involves adding support for shared memory, synchronization mechanisms, and a hierarchical scheduling system to prioritize container and system processes.||This project provides hands-on 
+                experience with kernel-level programming.">Description</button>
+              </div>
+            </div>
+
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/aac.png"
+                  alt="aac"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Affordable AAC</h2>
+              <div class="coding-language-container">
+                <img src="./assets/python-logo.png" alt="Language Logo" class="icon"/>
+                <img src="./assets/mongo-logo.jpg" alt="Language Logo" class="icon"/>
+                <img src="./assets/html-logo.png" alt="Language Logo" class="icon"/>
+                <img src="./assets/css-logo.png" alt="Language Logo" class="icon"/>
+                <img src="./assets/js-logo.png" alt="Language Logo" class="icon"/>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/myoo18/Affordable-AAC', '_blank')">Github</button>
+                <button class="btn btn-color-1 description-btn" data-description="The AAC project originated from a collaborative effort between myself and a group of friends during a Hackathon in 
+                the fall of 2023. Our primary motivation was to address the communication challenges faced by individuals with speech impairments. We recognized the potential of leveraging natural language 
+                processing technologies to create a solution that could assist users in forming coherent and grammatically correct sentences.||Training: The program fills this hashmap with information from a 
+                bunch of files in a specific directory. ||The current AAC system employs Spacy, an open-source NLP library, for initial text processing and linguistic analysis. To enhance the accuracy of 
+                sentence formation, we integrated Grammarly's Coedit-large model, which is adept at correcting grammatical errors. The combination of these models allows our system to interpret user input, 
+                even if it is fragmented or grammatically incorrect, and transform it into a readable English sentence.||This approach differs from traditional AAC systems, which often rely on predefined phrases 
+                or basic word prediction algorithms. By incorporating advanced NLP models, our system can adapt to the unique needs of each user, providing more personalized and contextually appropriate 
+                communication support.">Description</button>
+              </div>
+            </div>
+
+            
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/args.png"
+                  alt="Directory Search Engine"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">ARGS University System</h2>
+              <div class="coding-language-container">
+                <img src="./assets/python-logo.png" alt="Language Logo" class="icon"/>
+                <img src="./assets/sql-logo.png" alt="Language Logo" class="icon"/>
+                <img src="./assets/html-logo.png" alt="Language Logo" class="icon"/>
+                <img src="./assets/css-logo.png" alt="Language Logo" class="icon"/>
+                <img src="./assets/aws-logo.png" alt="Language Logo" class="icon"/>
+              </div>
+              <div class="btn-container">
+                <<button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/myoo18/ARGS-University-System', '_blank')">Github</button>
+                <button class="btn btn-color-1 description-btn" data-description="The objective of this project was to merge three distinct systems (APPS, REGS, ADS) into a unified project. 
+                ||The primary goal was to consolidate the workflows and integrate diverse schemas across the systems.|| The database is connected to a free student AWS server.
+                ||The APPS system provides an online application and admission review system for students seeking admission to the graduate programs (Masters and PhD degrees).
+                ||The REGS system provides a course registration system.
+                ||The ADS (Advising System, much like DegreeMap) provides functions that help with advising and graduation requirements.">Description</button>
+              </div>
+            </div>
+
+            
+          </div>
         </div>
       </div>
 
-      <!-- <div class="experience-details-container">
-        <div class="about-containers">
-          
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/directory-search-proj.png"
-                alt="Directory Search Engine"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Directory Search Engine</h2>
-            <div class="coding-language-container">
-              <img src="./assets/c-logo.png" alt="Language Logo" class="icon"/>
-            </div>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/myoo18/Directory-Search-Engine'">Github</button>
-              <button class="btn btn-color-1 description-btn" data-description="Starting the Program: When the program begins, it sets up a Hashmap to efficiently store and access data. 
-              The user decides how big this structure should be.||Training: The program fills this hashmap with information from a bunch of files in a specific directory. It doesn't matter 
-              how many files there are, thanks to a tool called glob_t that handles the file counting.||User Input: Once the training is done, the program waits for the user to type in some 
-              keywords they want to search for. The program will keep running until the user decides to stop it by pressing 'X'.||Searching and Ranking: When the user enters a search query, 
-              the program looks through the hashmap to find and rank the documents based on how relevant they are to the query. The ranking is done using a method called tf-idf 
-              (term frequency-inverse document frequency), which helps determine how important a word is in a document compared to a collection of documents.||Outputting Results: 
-              The ranked list of documents is then saved to a new file called search_scores.txt, with the most relevant document at the top and the least relevant at the bottom.||Cleaning Up: 
-              Once the user is done and presses 'X', the program makes sure to free up any memory it used and gets rid of the hashmap structure before closing.">Description</button>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/directory-search-proj.png"
-                alt="Directory Search Engine"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Directory Search Engine</h2>
-            <div class="coding-language-container">
-              <img src="./assets/c-logo.png" alt="Language Logo" class="icon"/>
-            </div>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/myoo18/Directory-Search-Engine'">Github</button>
-              <button class="btn btn-color-1 description-btn" data-description="Starting the Program: When the program begins, it sets up a Hashmap to efficiently store and access data. 
-              The user decides how big this structure should be.||Training: The program fills this hashmap with information from a bunch of files in a specific directory. It doesn't matter 
-              how many files there are, thanks to a tool called glob_t that handles the file counting.||User Input: Once the training is done, the program waits for the user to type in some 
-              keywords they want to search for. The program will keep running until the user decides to stop it by pressing 'X'.||Searching and Ranking: When the user enters a search query, 
-              the program looks through the hashmap to find and rank the documents based on how relevant they are to the query. The ranking is done using a method called tf-idf 
-              (term frequency-inverse document frequency), which helps determine how important a word is in a document compared to a collection of documents.||Outputting Results: 
-              The ranked list of documents is then saved to a new file called search_scores.txt, with the most relevant document at the top and the least relevant at the bottom.||Cleaning Up: 
-              Once the user is done and presses 'X', the program makes sure to free up any memory it used and gets rid of the hashmap structure before closing.">Description</button>
-            </div>
-          </div>
-
-          
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/directory-search-proj.png"
-                alt="Directory Search Engine"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Directory Search Engine</h2>
-            <div class="coding-language-container">
-              <img src="./assets/c-logo.png" alt="Language Logo" class="icon"/>
-            </div>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/myoo18/Directory-Search-Engine'">Github</button>
-              <button class="btn btn-color-1 description-btn" data-description="Starting the Program: When the program begins, it sets up a Hashmap to efficiently store and access data. 
-              The user decides how big this structure should be.||Training: The program fills this hashmap with information from a bunch of files in a specific directory. It doesn't matter 
-              how many files there are, thanks to a tool called glob_t that handles the file counting.||User Input: Once the training is done, the program waits for the user to type in some 
-              keywords they want to search for. The program will keep running until the user decides to stop it by pressing 'X'.||Searching and Ranking: When the user enters a search query, 
-              the program looks through the hashmap to find and rank the documents based on how relevant they are to the query. The ranking is done using a method called tf-idf 
-              (term frequency-inverse document frequency), which helps determine how important a word is in a document compared to a collection of documents.||Outputting Results: 
-              The ranked list of documents is then saved to a new file called search_scores.txt, with the most relevant document at the top and the least relevant at the bottom.||Cleaning Up: 
-              Once the user is done and presses 'X', the program makes sure to free up any memory it used and gets rid of the hashmap structure before closing.">Description</button>
-            </div>
-          </div>
-
-          
-        </div>
-      </div>
-    </section> -->
+    </section>
 
 
 
@@ -548,7 +562,7 @@
       <div class="modal-content">
         <span class="close">&times;</span>
         <h2 id="modalTitle">Project Title</h2>
-        <p id="modalDescription">Project description goes here...</p>
+        <p id="modalDescription"> </p>
       </div>
     </div>
 <!-- todo is finish projects -->
